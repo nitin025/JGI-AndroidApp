@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/main_activity"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="@drawable/logo"/>
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/viewPager"
+            android:layout_below="@+id/logo">
+
+
+        </android.support.v4.view.ViewPager>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#0b0249"
+            android:id="@+id/exam_form"
+            android:clickable="true"
+
+            android:layout_below="@+id/viewPager">
+            <ImageButton
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/exam_form"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#0b0249"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="98dp"
+                android:text="EXAM FORM"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#d1be11"
+            android:id="@+id/study_materials"
+            android:clickable="true"
+            android:layout_below="@+id/exam_form">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/study_materials"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#d1be11"
+                android:text="Study Materials"
+                style="?android:attr/borderlessButtonStyle"
+                android:shadowColor="#ffffff00"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="98dp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#ea0400"
+            android:id="@+id/library_books"
+            android:clickable="true"
+            android:layout_below="@+id/study_materials">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/library"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ea0400"
+                android:text="Library"
+                style="?android:attr/borderlessButtonStyle"
+                android:shadowColor="#ea040000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="98dp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#00FF00"
+            android:id="@+id/bus_tracker"
+            android:clickable="true"
+            android:layout_below="@+id/library_books">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bus"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FF00"
+                android:text="Bus Tracker"
+                style="?android:attr/borderlessButtonStyle"
+                android:shadowColor="#00FF0000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="98dp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="#3EC5FF"
+            android:clickable="true"
+            android:id="@+id/about_us"
+            android:layout_below="@+id/bus_tracker">
+
+            <ImageView
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/team"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3EC5FF"
+                android:text="About US"
+                style="?android:attr/borderlessButtonStyle"
+                android:shadowColor="#00FF0000"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="98dp"
+                android:textColor="#ffffff"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</ScrollView>

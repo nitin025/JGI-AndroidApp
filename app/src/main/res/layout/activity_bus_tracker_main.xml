@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/tracker_main"
+    android:background="@drawable/bg_gradient_rev"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logo_login">
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:background="@drawable/logo"/>
+    </RelativeLayout>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:id="@+id/driver_switch"
+        android:checked="false"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/student_label"
+        android:text="STUDENT"
+        android:layout_toEndOf="@+id/driver_switch"
+        android:layout_marginTop="150dp"
+        android:textColor="#373737"
+        android:textSize="24sp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/driver_switch"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/driver_label"
+        android:text="DRIVER"
+        android:layout_marginRight="5dp"
+        android:textColor="#373737"
+        android:textSize="24sp"
+        android:layout_marginTop="150dp"
+        android:layout_toStartOf="@+id/driver_switch"
+        android:layout_toLeftOf="@+id/driver_switch"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/enter"
+        android:text="Start"
+
+        />
+</RelativeLayout>

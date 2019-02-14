@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.nitin.jgi"
+    >
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/jgi_logo"
+        android:roundIcon="@drawable/jgi_logo"
+        android:supportsRtl="true"
+
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.SplashActivity"
+            android:label="@string/title_activity_splash_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.MainActivity" />
+
+        <meta-data
+            android:name="com.parse.https://parseapi.back4app.com/"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.atrQA2lfOvnQBnlxZy8P99VAlXvXoEeWXTl5g3LT"
+            android:value="@string/back4app_app_id" />
+        <meta-data
+            android:name="com.parse.U3t49zhizXICI5xSZCGxEpMWfGvnvhh3vg8PxAXA"
+            android:value="@string/back4app_client_key" />
+
+        <activity android:name=".Activities.BusTrackerMain" />
+        <activity
+            android:name=".Activities.ExamFormMain"
+            android:label="@string/title_activity_exam_form_main"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activities.StudyMaterialMain" />
+        <activity android:name=".Activities.LibraryMain" />
+        <activity android:name=".Activities.AboutUsMain" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".Activities.DriverLogin" />
+        <activity android:name=".DriverPanel" />
+        <activity
+            android:name=".Activities.StudentTrack"
+            android:label="@string/title_activity_student_track"></activity>
+    </application>
+
+</manifest>

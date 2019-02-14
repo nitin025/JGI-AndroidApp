@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/about_us_scroll"
+    android:fillViewport="true"
+    android:background="@drawable/bg_gradient_rev"
+    >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/about_us_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/logo_login">
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:background="@drawable/logo"/>
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/dev_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:text="Development Team"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/ux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dev_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="UI/UX/App Developers"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/durgesh_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ux"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/durgesh2" />
+
+        <ImageView
+            android:id="@+id/nitin_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/durgesh_img_desc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+
+            android:background="@drawable/nitin"
+            android:maxWidth="50dp"
+            android:maxHeight="50dp" />
+
+        <EditText
+            android:id="@+id/durgesh_img_desc"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/durgesh_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:lines="3"
+            android:minLines="3"
+            android:text="Durgesh Nandan                     github.com/Durgnan  www.linkedin.com/in/durgesh-nandan-75a80b140"
+            android:textAlignment="center"
+            android:editable="false"
+
+            />
+
+        <EditText
+            android:id="@+id/nitin_img_desc"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:lines="3"
+            android:minLines="3"
+            android:layout_below="@+id/nitin_img"
+            android:editable="false"
+            android:text="Nitin Sabale           github.com/nitin025       www.linkedin.com/in/nitin-sabale-107485169"
+
+
+            android:textAlignment="center"
+
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
